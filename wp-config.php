@@ -14,15 +14,23 @@
  * @package WordPress
  */
 
+define('WP_SITEURL', 'http://' . $_SERVER['SERVER_NAME'] . '/wp');
+define('WP_HOME',    'http://' . $_SERVER['SERVER_NAME']);
+
+define('WP_CONTENT_DIR', $_SERVER['DOCUMENT_ROOT'] . '/wp-content');
+define('WP_CONTENT_URL', 'http://' . $_SERVER['SERVER_NAME'] . '/wp-content');
+
+define('WP_DEFAULT_THEME', 'twentytwelve');
+
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'database_name_here');
+define('DB_NAME', 'gitpressdb');
 
 /** MySQL database username */
-define('DB_USER', 'username_here');
+define('DB_USER', 'gitpress');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'password_here');
+define('DB_PASSWORD', 'gitpress');
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');
@@ -42,14 +50,14 @@ define('DB_COLLATE', '');
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         'put your unique phrase here');
-define('SECURE_AUTH_KEY',  'put your unique phrase here');
-define('LOGGED_IN_KEY',    'put your unique phrase here');
-define('NONCE_KEY',        'put your unique phrase here');
-define('AUTH_SALT',        'put your unique phrase here');
-define('SECURE_AUTH_SALT', 'put your unique phrase here');
-define('LOGGED_IN_SALT',   'put your unique phrase here');
-define('NONCE_SALT',       'put your unique phrase here');
+define('AUTH_KEY',         '_8rn:UW<s+(Sf:pgA3|0Vm&*nDHp*deaiSE{BT./A[4=}w8Sk-+a!;VAc:S6C@+/');
+define('SECURE_AUTH_KEY',  '0[IBthD2Y^9+> L-(&!)O2-9XKH[I.#e#9sny>+(4k~w<I#,x{e+tD5SQ9<.#&1|');
+define('LOGGED_IN_KEY',    'U|7-tnm$U;f-qx|[N}UGv,rkOj9YQ-4r 2WTR{f+V.h5{L+raVLW($|/9$EVE4a*');
+define('NONCE_KEY',        '480)V+f)u=Gq4aK+)vQtheoXBQ*HwwB$Dj-RoBT9-vQ-|^6&lfnEW&~8suK][)Y{');
+define('AUTH_SALT',        'e|xa.C3)(y`tyv.h[=x>aG|F&:FIiuvXse4UgnBQ)4nt_V)Nb5~PHuMvy<8zdJ|8');
+define('SECURE_AUTH_SALT', 'fh>wi+XN+|3 ,{ _QKIAS[v(z9|Q9O+5aNyLlqApj@k<5{BsEuo/wtX1IPJSf1]F');
+define('LOGGED_IN_SALT',   'HP]$R8_-!dm8WD0[VHQ4Zu+<2V~&mFbXmBw;Rp=Bf[uAOp*Op/@|*}9s-SH`,V=!');
+define('NONCE_SALT',       'd-,3n8esaN0wHZdNkpqN,(kz^.#n+f:q_0o|6]OQBds}2Kh$jis)i}Nf?OAFrV} ');
 
 /**#@-*/
 
@@ -59,7 +67,7 @@ define('NONCE_SALT',       'put your unique phrase here');
  * You can have multiple installations in one database if you give each a unique
  * prefix. Only numbers, letters, and underscores please!
  */
-$table_prefix  = 'wp_';
+$table_prefix  = 'gitpress_';
 
 /**
  * WordPress Localized Language, defaults to English.
